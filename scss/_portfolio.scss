@@ -1,0 +1,118 @@
+
+.portfolio {
+    &__heading {
+        margin: 2em 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+    }
+    .portfolio__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include breakpoint-up(medium) {
+            justify-content: space-between;
+        }
+        
+        button {
+            padding: 0.5em 1.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: $color-white;
+            border: 1px solid $color-black;
+            cursor: pointer;
+            order: 3;
+            @include breakpoint-up(medium) {
+                order: 0;
+                align-self: center;
+            }
+        }
+        .portfolio__image {
+            
+            margin-bottom: 2em;
+            .image {
+                position: relative;
+            }
+            h2{
+                position: absolute;
+                left: 1em;
+                bottom: 1em;
+            }
+
+            span {
+                font: inherit;
+                display: block;
+                text-transform: uppercase;
+                color: $color-white;
+            }
+
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2em;
+
+            @include breakpoint-up(medium){
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include breakpoint-up(large){
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .image-1 {
+                background: url("../../images/mobile/image-curiosity.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+            }
+            .image-2 {
+                background: url("../../images/mobile/image-deep-earth.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+            }
+            .image-3 {
+                background: url("../../images/mobile/image-fisheye.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+            }
+            .image-4 {
+                background: url("../../images/mobile/image-from-above.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+            }
+            .image-5 {
+                background: url("../../images/mobile/image-grid.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+            }
+            .image-6 {
+                background: url("../../images/mobile/image-night-arcade.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+            }
+            .image-7 {
+                background: url("../../images/mobile/image-pocket-borealis.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+            }
+            .image-8 {
+                background: url("../../images/mobile/image-soccer-team.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 30vh;
+            }
+        }
+    }
+}

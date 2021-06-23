@@ -1,0 +1,42 @@
+.section-1 {
+    padding: 5rem 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        @include breakpoint-up(medium){
+           flex-direction: row;
+        }
+        > div {
+            width: 100%;
+        }
+        .section-1__img {
+            background: url("../../images/mobile/image-interactive.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vw;
+            margin-bottom: 3em;
+
+           
+        }
+        .section-1__info-text {
+            padding: 0 1.5em;
+            overflow: hidden;
+            h2 {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                line-height: 1.2;
+                margin-bottom: 1em;
+            }
+            p {
+                font-size: 1rem;
+                color: $veryDarkGrey;
+                line-height: 1.5;
+            }
+          
+        }
+    }
+}
